@@ -1,1 +1,1 @@
-shell permoissions
+systen devops
