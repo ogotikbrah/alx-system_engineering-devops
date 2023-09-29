@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-#this script prints the content of currrent working dir in list format
-for filename in *
-do
-	echo "$filename" | cut -d "-" -f2-
+# This script displays the content of the current directory in list format
+# Only displays the part of the name after the first dash
+
+mylist=$(ls)
+
+for i in $mylist; do
+  echo "$i" | cut -d '-' -f2
 done
